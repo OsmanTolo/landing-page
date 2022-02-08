@@ -74,3 +74,11 @@ img {
 .navbar img {
   width: 15em;
 }
+
+/* About section */
+.about {
+  height: 400px;
+  background-color: #7dcaba;
+  color: #0c2461;
+  position: relative; /*To posiition anything absolute within it*/
+}
