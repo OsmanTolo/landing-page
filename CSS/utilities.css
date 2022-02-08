@@ -1,0 +1,15 @@
+/*UTILITIES - classes used all around the website */
+.container {
+  max-width: 1100px; /*Prevents the page from taking the full width of the device*/
+  margin: 0 auto; /*Keeps everything in the centre of the page*/
+  overflow: auto; /*Removes the space at the top of the page set by the h1 element*/
+  padding: 0 40px;
+}
+
+/*Flex utility to make container a flex container, and the contents of the container (i.e. h1 +nav) as flex items. This class will be used for any container that needs it.*/
+.flex {
+  display: flex; /*Places the nav items next to h1 in column*/
+  justify-content: center;
+  align-items: center;
+  height: 100%; /*The full heaight of the container*/
+}
