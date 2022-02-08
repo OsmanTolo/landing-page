@@ -40,6 +40,37 @@ p {
   margin: 10px 0;
 }
 
-/* img {
-  width: 100%; 
-} */
+img {
+  width: 100%;
+}
+
+/*Nav bar*/
+.navbar {
+  background-color: #fff;
+  height: 70px;
+}
+
+.navbar ul {
+  display: flex; /*Align the li items of the navbar to be horizontal*/
+}
+
+.navbar a {
+  color: #000;
+  font-weight: 600;
+  padding: 10px; /*Add space between the nav links*/
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  border-bottom: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+/*If .flex is within the .navbar class, then use space between */
+.navbar .flex {
+  justify-content: space-between; /*takes the remaining space around the flex items and puts it between the items.*/
+}
+
+.navbar img {
+  width: 15em;
+}
