@@ -52,6 +52,13 @@
   height: 100%; /*height is needed in order for justify and align content to work, otherwise the contents will not center*/
 }
 
+.grid-3 {
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /*Defines how big and wide we want each column - in this instance, there are three equaly sized columns*/
+}
+
 /* Text Sizes */
 .lead {
   font-size: 20px;
