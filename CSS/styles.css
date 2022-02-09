@@ -97,3 +97,14 @@ img {
   font-weight: 400;
   color: #3c6382;
 }
+
+/*Grid properties specifically for the showcase items*/
+.about .grid {
+  grid-template-columns: 55% 45%;
+  gap: 30px;
+  overflow: visible; /*Allow for things to overflow without showing the scroll bar - particularly used for the showcase-form which has a height and position that is over the showcase container.*/
+}
+
+.about img {
+  border-radius: 5px;
+}

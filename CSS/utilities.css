@@ -6,10 +6,33 @@
   padding: 0 40px;
 }
 
+/*Base style for buttons*/
+.btn {
+  display: inline-block; /*allows to set a width and height on the element*/
+  padding: 10px 30px;
+  cursor: pointer;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
 /*Flex utility to make container a flex container, and the contents of the container (i.e. h1 +nav) as flex items. This class will be used for any container that needs it.*/
 .flex {
   display: flex; /*Places the nav items next to h1 in column*/
   justify-content: center;
   align-items: center;
   height: 100%; /*The full heaight of the container*/
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(
+    2,
+    1fr
+  ); /*Defines how big and wide we want each column - in this instance, there are two equaly sized columns*/
+  gap: 20px; /*20px gap betwwen the columns*/
+  justify-content: center;
+  align-items: center;
+  height: 100%; /*height is needed in order for justify and align content to work, otherwise the contents will not center*/
 }
