@@ -1,6 +1,5 @@
 /* Import fonts */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Josefin+Sans:wght@400;600;700&display=swap");
 
 /* Custom properties */
 :root {
@@ -17,7 +16,7 @@
 
 /*Set base styles for the page*/
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   line-height: 1.6;
 }
 
@@ -56,7 +55,9 @@ img {
 }
 
 .navbar a {
+  font-family: "Barlow", sans-serif;
   color: #000;
+  font-size: 18px;
   font-weight: 600;
   padding: 10px; /*Add space between the nav links*/
   margin: 0 5px;
@@ -106,5 +107,28 @@ img {
 }
 
 .about img {
+  border-radius: 5px;
+}
+
+/* Our work section */
+.our-work {
+  padding-top: 50px;
+  font-family: "Barlow", sans-serif;
+}
+
+.our-work h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+.our-work p {
+  font-size: 18px;
+}
+
+.our-work_video iframe {
+  width: 450px;
+  justify-self: flex-start;
   border-radius: 5px;
 }
