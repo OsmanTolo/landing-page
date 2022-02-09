@@ -161,3 +161,43 @@ section {
   text-align: center;
   margin: 15px 0;
 }
+
+/* Contact Section */
+
+.contact .grid {
+  gap: 50px;
+  overflow: visible; /*Allow for things to overflow without showing the scroll bar - particularly used for the showcase-form which has a height and position that is over the showcase container.*/
+}
+.contact h4 {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.contact h2 {
+  /* font-family: "Josefin Sans", sans-serif; */
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--secondary-color);
+  padding: 10px;
+  margin: 0;
+}
+
+.contact-form p {
+  color: var(--secondary-color);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  /*Target the inputs within the form with text and email type*/
+  border: 1px solid #daecfd;
+  width: 100%; /*Takes the entire width of the form element*/
+  padding: 3px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
