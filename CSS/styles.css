@@ -156,14 +156,15 @@ section {
 }
 
 .donate select {
-  background-color: #f6f3ea;
+  background-color: #fff;
   border: 1px solid var(--primary-color);
   text-align: center;
   margin: 15px 0;
+  border-radius: 5px;
+  font-size: 14px;
 }
 
 /* Contact Section */
-
 .contact .grid {
   gap: 50px;
   overflow: visible; /*Allow for things to overflow without showing the scroll bar - particularly used for the showcase-form which has a height and position that is over the showcase container.*/
@@ -185,7 +186,7 @@ section {
 }
 
 .contact-form p {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   font-weight: 700;
   font-size: 18px;
 }
@@ -200,4 +201,40 @@ section {
   font-size: 16px;
   margin-bottom: 10px;
   border-radius: 5px;
+}
+
+.contact-form label {
+  display: block;
+  /* margin-bottom: 8px; */
+  color: var(--secondary-color);
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  color: var(--primary-color);
+}
+
+.contact-info h3 {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--secondary-color);
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.contact-info p {
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #3c6382;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.required::after {
+  content: " *";
+  color: red;
 }
