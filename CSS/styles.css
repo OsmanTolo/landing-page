@@ -130,7 +130,7 @@ section {
 }
 
 .our-work_video iframe {
-  width: 450px;
+  width: 100%;
   justify-self: flex-start;
   border-radius: 10px;
   /* padding: 10px 0; */
@@ -269,4 +269,47 @@ section {
 .footer a {
   font-size: 16px;
   color: var(--secondary-color);
+}
+
+/* RESPONSIVE */
+
+/* For tablets and under */
+@media (max-width: 768px) {
+  /*Anything under 768px - aim is to stack everything in a column*/
+  .grid,
+  .about .grid,
+  .our-work .grid,
+  .donate .grid,
+  .contact .grid {
+    grid-template-columns: 1fr; /*one single column*/
+    grid-template-rows: 1fr; /*to remove the 2 rows on cli section*/
+  }
+
+  .about {
+    height: auto;
+  }
+}
+
+/* For mobile */
+@media (max-width: 500px) {
+  /*Anything under 500px*/
+  /* html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  } */
+  .navbar .flex {
+    flex-direction: column; /*Puts everything on the navbar on top of each other*/
+  }
+
+  .navbar a {
+    padding: 5px;
+    margin-bottom: 10px;
+    /* flex-wrap: wrap; */
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
 }

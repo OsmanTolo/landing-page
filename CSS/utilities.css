@@ -64,41 +64,8 @@
   font-size: 20px;
 }
 
-.sm {
-  font-size: 1rem;
-}
-
-.md {
-  font-size: 2rem;
-}
-
-.lg {
-  font-size: 3rem;
-}
-
-.xl {
-  font-size: 4rem;
-}
-
 /* Margin */
 /* Margin for top and bottom */
 .my-1 {
   margin: 1rem 0; /*rem unit is a multiplier of the root element font size. The default font-size is 16px = 1rem*/
-}
-
-.my-2 {
-  margin: 1.5rem 0;
-}
-
-.my-3 {
-  margin: 2rem 0;
-}
-
-.my-4 {
-  margin: 3rem 0;
-}
-
-/* Padding */
-.p-5 {
-  padding: 4rem;
 }
