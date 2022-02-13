@@ -262,7 +262,7 @@ section {
 
 .footer p {
   font-family: "Barlow", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   color: var(--secondary-color);
 }
 
@@ -280,24 +280,79 @@ section {
   .about .grid,
   .our-work .grid,
   .donate .grid,
-  .contact .grid {
+  .contact .grid,
+  .footer .grid {
     grid-template-columns: 1fr; /*one single column*/
-    grid-template-rows: 1fr; /*to remove the 2 rows on cli section*/
+    /* grid-template-rows: 1fr; to remove the 2 rows on cli section */
   }
 
   .about {
     height: auto;
+  }
+
+  .about .btn,
+  .our-work .btn,
+  .donate .btn {
+    display: flex;
+    justify-content: center;
+    padding: 5px 15px;
+    width: 30vw;
+    margin: 0 auto;
+  }
+
+  .donation-option {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: 70vw;
+  }
+
+  .donation-option label {
+    margin-top: 15px;
+  }
+
+  .donation-option #dropdown {
+    padding: 5px 15px;
+    width: 30vw;
+    justify-self: center;
+    margin: 15px auto;
+    text-align: center;
+  }
+
+  /* .donation-option .btn {
+    display: flex;
+    justify-content: center;
+    width: 30vw;
+  } */
+
+  .footer .social {
+    justify-self: flex-start;
   }
 }
 
 /* For mobile */
 @media (max-width: 500px) {
   /*Anything under 500px*/
-  /* html,
-  body {
-    max-width: 100%;
-    overflow-x: hidden;
-  } */
+
+  section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .about h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .about .btn,
+  .our-work .btn,
+  .donate .btn {
+    display: flex;
+    padding: 5px 15px;
+    width: 30vw;
+    margin: 0 auto;
+  }
+
   .navbar .flex {
     flex-direction: column; /*Puts everything on the navbar on top of each other*/
   }
@@ -305,11 +360,57 @@ section {
   .navbar a {
     padding: 5px;
     margin-bottom: 10px;
-    /* flex-wrap: wrap; */
+  }
+
+  .our-work h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .donate h2 {
+    font-size: 30px;
+  }
+
+  .donate h3 {
+    font-size: 24px;
+  }
+
+  .donation-option {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: 70vw;
+  }
+
+  .donation-option label {
+    margin-top: 15px;
+  }
+
+  .donation-option #dropdown {
+    padding: 5px 15px;
+    width: 30vw;
+    justify-self: center;
+    margin: 15px auto;
+    text-align: center;
+  }
+
+  .donate select {
+    margin: 15px 0;
+  }
+
+  .contact .grid {
+    gap: 30px;
   }
 
   .footer {
-    display: flex;
-    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .footer p {
+    font-size: 14px;
+  }
+
+  .footer .social {
+    justify-self: flex-start;
   }
 }
