@@ -283,7 +283,6 @@ section {
   .contact .grid,
   .footer .grid {
     grid-template-columns: 1fr; /*one single column*/
-    /* grid-template-rows: 1fr; to remove the 2 rows on cli section */
   }
 
   .about {
@@ -318,12 +317,6 @@ section {
     margin: 15px auto;
     text-align: center;
   }
-
-  /* .donation-option .btn {
-    display: flex;
-    justify-content: center;
-    width: 30vw;
-  } */
 
   .footer .social {
     justify-self: flex-start;
